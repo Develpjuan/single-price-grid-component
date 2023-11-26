@@ -1,0 +1,1 @@
+Componente de cuadrícula de precio único

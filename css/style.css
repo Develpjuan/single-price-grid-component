@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px; 
+    min-height: 100vh;
+    background-color: rgb(229, 239, 245);
+}
+
+.content {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.199);
+}
+
+.content-description {
+    padding: 25px;
+}
+
+.content-description__title {
+    color: rgb(42, 178, 175);
+    font-size: 22px;
+    margin-top: 0; 
+}
+
+.content-description__second-title {
+    color: rgb(191, 222, 51);
+    font-size: 15px;
+}
+
+.content-description__text {
+    color: rgb(152, 166, 189);
+    margin-bottom: 0;
+}
+
+.content-subscription {
+    padding: 25px;
+    background-color: rgb(42, 178, 175);
+}
+
+.content-subscription__title {
+    font-size: 22px;
+    color: rgb(229, 239, 245);
+    margin-top: 0;
+}
+
+.content-subscription__plan {
+    color:rgba(229, 239, 245, 0.438);
+}
+
+.price {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.content-subscription__text {
+    color: rgb(229, 239, 245);
+}
+
+.content-subscription__btn {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(191, 222, 51);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.151);
+}
+
+.content-footer {
+    padding: 25px;
+    background-color: rgba(42, 178, 176, 0.89);
+    border-radius: 0 0 5px 5px;
+}
+
+.content-footer__title {
+    font-size: 22px;
+    color: rgb(229, 239, 245);
+    margin-top: 0; 
+}
+
+.content-footer__items {
+    padding: 0;
+}
+
+.item {
+    list-style: none;
+    color: rgba(229, 239, 245, 0.678);
+    margin-bottom: 5px;
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+
+
+.f {
+    color: rgb(42, 178, 175);
+    color: rgb(191, 222, 51);
+    color: rgb(229, 239, 245);
+    color: rgb(152, 166, 189);
+}
+
+@media screen and (min-width: 480px) {
+    .main {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        text-align: left;
+    }
+
+    .content-description,
+    .content-subscription,
+    .content-footer {
+        padding: 35px;
+    }
+    .content-sections {
+        display: flex;
+    }
+
+    .content-subscription {
+        width: 50%;
+        border-radius: 0 0 0 5px;
+    }
+
+    .content-subscription__btn {
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .content-footer {
+        width: 50%;
+        border-radius: 0 0 5px 0; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        width: 65%;
+    }
+}
